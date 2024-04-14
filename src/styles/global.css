@@ -1,3 +1,12 @@
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
 html {
   background: rgb(0, 0, 3);
   background: radial-gradient(circle, rgba(0, 0, 3, 1) 0%, rgba(18, 18, 61, 1) 100%, rgba(2, 2, 7, 1) 100%);
@@ -21,6 +30,12 @@ h1 {
   color: #845eee;
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+h2 h3 {
+  color: #a589f0;
+  margin: 1rem 0;
+  font-size: 1.5rem;
 }
 
 p {
