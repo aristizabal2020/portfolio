@@ -1,12 +1,27 @@
 ---
-import Hamburguer from './Hamburguer.astro';
+import image_sena from '../assets/images/Sena_Colombia_logo.png';
 import Navigation from './Navigation.astro';
-import ThemeIcon from './ThemeIcon.astro';
 ---
 <header>
   <nav>
-    <Hamburguer />
-    <ThemeIcon />
-    <Navigation />
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">ARISTI.dev</a>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ARISTI.dev</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <Navigation />
+          </div>
+        </div>
+        <a href="#" class="login-button">SENA <img src={image_sena.src} id="sena_logo"></a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
   </nav>
 </header>
