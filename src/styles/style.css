@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
 	/* margin: 0;
     padding: 0;
@@ -30,6 +32,7 @@ h4 {
 }
 
 p {
+	color: whitesmoke;
 	text-wrap: pretty;
 }
 
@@ -41,18 +44,49 @@ p {
 }
 
 .navbar {
-	background-color: rgba(70, 70, 70, 0.584);
+	background-color: rgb(70, 70, 70);
 	height: 80px;
 	margin: 20px;
 	border-radius: 16px;
 	border-color: #00b383;
 	padding: 0.5rem;
 }
+
 .navbar-brand {
-	font-weight: 500;
+	font-family: "Press Start 2P", system-ui;
+	font-style: normal;
+	font-weight: 800;
 	color: #009970;
 	font-size: 24px;
 	transition: 0.2s color;
+}
+
+.navbar-brand:hover {
+	color: #fff;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 450px;
+	margin-top: 140px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	height: 100%;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+
+	.row.content {
+		height: auto;
+	}
 }
 
 .login-button {
