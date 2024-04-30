@@ -16,6 +16,8 @@ const { pageTitle } = Astro.props;
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
@@ -40,10 +42,13 @@ const { pageTitle } = Astro.props;
         </div>
         <div class="col-sm-2 sidenav">
           <div class="well">
-            <p>ADS</p>
+            <a href="https://discord.gg/4kkEDSNbcT" data-bs-toggle="tooltip" title="aristivys"><i class="bi-discord"></i></a>
           </div>
           <div class="well">
-            <p>ADS</p>
+            <a href="https://twitter.com/PipeAristiza" data-bs-toggle="tooltip" title="@PipeAristiza"><i class="bi-twitter-x"></i></a>
+          </div>
+          <div class="well">
+            <a href="#" data-bs-toggle="tooltip" title="Aristi#9676"><i class="bi-xbox"></i></a>
           </div>
         </div>
       </div>

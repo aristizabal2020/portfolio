@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
-	/* margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
 	min-width: 0;
@@ -14,8 +14,8 @@ body {
 	/* Fondo de pantalla fijo */
 	background-attachment: fixed;
 	/* Gradiente lineal */
-	background: rgb(0, 0, 3);
-	background: radial-gradient(circle, rgba(0, 0, 3, 1) 0%, rgba(24, 24, 28, 1) 61%, rgba(2, 2, 7, 1) 100%);
+	background: rgb(6, 6, 6);
+	background: linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(27, 27, 27, 1) 50%, rgba(6, 6, 6, 1) 100%);
 	/* Ajustes para el fondo */
 	background-size: cover;
 	background-position: center;
@@ -34,6 +34,28 @@ h4 {
 p {
 	color: whitesmoke;
 	text-wrap: pretty;
+}
+
+a {
+	color: currentColor;
+}
+
+/* menu social links */
+.well {
+	color: antiquewhite;
+	font-size: 4rem;
+
+}
+
+.well > :hover {
+	font-size: 4rem;
+	color: #00b383;
+	cursor: pointer;
+	transition: 0.3s color;
+}
+
+.bi-xbox {
+	cursor: auto;
 }
 
 /* Menú de Navegación */
@@ -145,8 +167,4 @@ p {
 		width: 100%;
 		visibility: visible;
 	}
-}
-
-* {
-	border-color: red;
 }
