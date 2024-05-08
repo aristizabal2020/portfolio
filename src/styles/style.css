@@ -40,6 +40,11 @@ a {
 	color: currentColor;
 }
 
+#offcanvasNavbarLabel {
+	font-family: "Press Start 2P", system-ui;
+	color: #009970;
+}
+
 /* menu social links */
 .well {
 	color: antiquewhite;
@@ -95,8 +100,10 @@ a {
 
 /* Set gray background color and 100% height */
 .sidenav {
+	display: flex;
 	padding-top: 20px;
 	height: 100%;
+    flex-direction: column;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -104,25 +111,20 @@ a {
 	.sidenav {
 		height: auto;
 		padding: 15px;
+		justify-content: space-around;
+		flex-direction: row;
 	}
 
 	.row.content {
 		height: auto;
 	}
-}
 
-.login-button {
-	background-color: #009970;
-	color: #fff;
-	font-size: 20px;
-	padding: 8px 20px;
-	border-radius: 50px;
-	text-decoration: none;
-	transition: 0.3s background-color;
-}
-
-.login-button:hover {
-	background-color: #00b383;
+	#offcanvasNavbar {
+		background: rgb(6, 6, 6);
+		background: linear-gradient(90deg, rgba(6, 6, 6, 1) 0%, rgba(27, 27, 27, 1) 50%, rgba(6, 6, 6, 1) 100%);
+		border-color: #00b383;
+	
+	}
 }
 
 .navbar-toggler {
@@ -167,4 +169,5 @@ a {
 		width: 100%;
 		visibility: visible;
 	}
+	
 }
