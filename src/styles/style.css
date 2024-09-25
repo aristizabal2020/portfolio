@@ -40,10 +40,6 @@ a {
 	color: currentColor;
 }
 
-#offcanvasNavbarLabel {
-	font-family: "Press Start 2P", system-ui;
-	color: #009970;
-}
 
 /* menu social links */
 .well {
@@ -65,15 +61,16 @@ a {
 
 /* Menú de Navegación */
 
-#sena_logo {
+/* #sena_logo {
 	height: 20px;
 	width: 25px;
-}
+} */
 
 .navbar {
 	background-color: rgb(70, 70, 70);
 	height: 80px;
 	margin: 20px;
+	border: 1px green ;
 	border-radius: 16px;
 	border-color: #00b383;
 	padding: 0.5rem;
@@ -90,7 +87,7 @@ a {
 
 .navbar-brand:hover {
 	color: #fff;
-}
+} 
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
